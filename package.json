@@ -1,21 +1,19 @@
 {
   "name": "capacitor-cloudkit-api",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Plugin for using CloudKit Key-Value API in Capacitor Apps",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
   "types": "dist/esm/index.d.ts",
   "unpkg": "dist/plugin.js",
   "files": [
-    "android/src/main/",
-    "android/build.gradle",
     "dist/",
     "ios/Sources",
     "ios/Tests",
     "Package.swift",
     "CapacitorCloudkitApi.podspec"
   ],
-  "author": "Nikita Balin",
+  "author": "Nikita Balin <n.balin@koka.team>",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -27,7 +25,11 @@
   "keywords": [
     "capacitor",
     "plugin",
-    "native"
+    "native",
+    "cloudkit",
+    "key-value",
+    "capacitor cloudkit api",
+    "capacitor key-value storage"
   ],
   "scripts": {
     "verify": "npm run verify:ios && npm run verify:android && npm run verify:web",

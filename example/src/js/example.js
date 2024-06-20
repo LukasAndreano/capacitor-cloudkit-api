@@ -1,6 +1,15 @@
 import { CapacitorCloudkitAPI } from 'capacitor-cloudkit-api';
 
-window.testEcho = () => {
-    const inputValue = document.getElementById("echoInput").value;
-    CapacitorCloudkitAPI.echo({ value: inputValue })
+window.saveData = async () => {
+    await CapacitorCloudkitAPI.saveKeyValue({
+        key: 'exampleKey',
+        value: 'exampleValue'
+    });
+}
+
+window.getData = async () => {
+    const result = await CapacitorCloudkitAPI.getKeyValue({
+        key: 'exampleKey'
+    });
+    console.log(result);
 }

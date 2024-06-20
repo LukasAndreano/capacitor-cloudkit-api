@@ -1,3 +1,4 @@
 export interface CapacitorCloudkitAPIPlugin {
-  echo(options: { value: string }): Promise<{ value: string }>;
+  saveKeyValue(options: { key: string, value: string }): Promise<{ key: string, value: string }>;
+  getKeyValue(options: { key: string }): Promise<{ key: string, value: string }>;
 }
